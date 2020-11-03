@@ -9,7 +9,6 @@ body{
   header{
     background: #fff;
     border-bottom: 3px solid #696969;
-    /*Your  code here again.*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,21 +16,24 @@ body{
   }
   
   .navlinks{
-    /*Your code here again.*/
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
-  .navitem {
+  .about, .portfolio, .resume {
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
   }
+
+  body.about li.about, body.portfolio li.portfolio{
+    text-decoration: underline;
+  }
   
   nav li a:hover {
-    color: #696969
+    color: #800040;
   }
 
   .headshot{
@@ -46,7 +48,15 @@ body{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-column: 3 / span 1
+  }
+
+  .mision_items, .strengths_items{
+    grid-column: 2 / span 1;
+  }
+
+  .mission_items li, .strengths_items li{
+    text-align: center;
+    font-weight: bold;
   }
 
 
@@ -54,20 +64,17 @@ body{
     font-size: 2em;
     text-align: center;
     line-height: 2;
+    padding: 10px;
   }
   
   h2{
     font-size: 1.5em;
     text-align: center;
-    padding: 5px;
-  }
-
-  .mission, .strengths{
-    text-align: center;
+    padding: 20px 10px;
   }
   
   p {
-    padding: 0 30px;
+    padding: 10px 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -95,8 +102,9 @@ body{
     box-shadow: 0 0 2px 1px black;
   }
 
-  a:visited{
+  a, a:visited{
     text-decoration: none;
+    color: black;
   }
   
   *:focus{
@@ -125,13 +133,11 @@ body{
     header{
       flex-direction: row;
       justify-content: space-between;
-      flex-wrap: nowrap;
     }
   
     .navlinks{
-      justify-content: space-around;
+      justify-content: space-between;
       flex-direction: row;
-      flex-wrap: nowrap;
     }
 
     .nav_item a{
@@ -147,13 +153,11 @@ body{
     header{
       flex-direction: row;
       justify-content: space-between;
-      flex-wrap: nowrap;
     }
   
     .navlinks{
-      justify-content: space-around;
+      justify-content: left;
       flex-direction: row;
-      flex-wrap: nowrap;
     }
 
     .nav_item a{
