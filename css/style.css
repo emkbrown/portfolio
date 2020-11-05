@@ -158,7 +158,6 @@ body{
   }
 
   /*for rise up*/
-
   .rise_up li{
     text-align: left;
     list-style: circle;
@@ -204,7 +203,7 @@ body{
   grid-row: 2;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 100%;
 }
 
 .weather_sketch2{
@@ -212,7 +211,7 @@ body{
   grid-column: 1 / span 2;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 100%;
   
 }
 
@@ -383,6 +382,10 @@ body{
 
     .weather{
       padding-left: 0px;
+    }
+
+    .weather_sketch1, .weather_sketch2{
+      width: 75%;
     }
 
     .rise_up li{
