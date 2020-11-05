@@ -162,6 +162,8 @@ body{
   .rise_up li{
     text-align: left;
     list-style: circle;
+    padding: 0px 30px;
+    font-size: .90em;
   }
 
   .rise_up li a{
