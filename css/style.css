@@ -53,6 +53,7 @@ body{
     line-height: 2;
     padding: 10px;
     font-family: 'Oswald', sans-serif ;
+    color: #800040;
   }
   
   h2{
@@ -60,10 +61,12 @@ body{
     text-align: center;
     padding: 20px 10px;
     font-family: 'Oswald', sans-serif ;
+    color: #800040;
   }
 
   h3{
     font-family: 'Oswald', sans-serif ;
+    color: #c86706;
   }
   
   p {
