@@ -55,7 +55,7 @@ body{
     text-align: left;
   }
 
-  body.about li.about, body.portfolio li.portfolio, body.rise_up li.rise_up, body.ldc li.ldc, body.weather li.weather, body.collage li.collage {
+  body.about li.about, body.portfolio li.portfolio {
     text-decoration: underline;
   }
   
@@ -140,6 +140,17 @@ body{
   grid-template-rows: auto auto;
   grid-template-columns: auto auto auto;
   justify-items: center;
+}
+
+.next {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+}
+.next a:hover {
+  color: #800040;
 }
 
   h1{
