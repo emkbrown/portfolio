@@ -71,6 +71,11 @@ body{
     padding: 5px;
   }
 
+  .collageimg, .color{
+    width: 50%
+  }
+
+
   .mission, .strengths{
     display: grid;
     grid-template-columns: auto;
