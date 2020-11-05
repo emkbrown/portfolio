@@ -2,57 +2,81 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 16pt; 
-    background-color: #ffffc4;
+    font-size: 14pt; 
+    background-color: #eeeeee;
   }
 
   header{
-    background: #Ffffc4;
-    border: #ffffc4;
+    background: #eeeeee;
+    border: #eeeeee;
     border-bottom: 3px solid #696969;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    font-size: 12pt;
+    width: 100%;
   }
   
   .navlinks{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  #logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+  }
+  
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  p {
+    padding: 5px 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: .90em;
+  }
+
+  a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
   }
 
   .about, .portfolio, .resume {
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
-  }
-
-  .dropdown{
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown-content li{
-    text-align: left;
   }
 
   body.about li.about, body.portfolio li.portfolio {
@@ -63,7 +87,23 @@ body{
     color: #800040;
   }
 
-  .headshot, .color, .collageimg{
+  a, a:visited{
+    text-decoration: none;
+    color: black;
+  }
+  
+  *:focus{
+    border: 2px solid black;
+  }
+  
+  footer{
+    background-color: #696969;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .headshot{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -71,15 +111,11 @@ body{
     padding: 5px;
   }
 
-  .collageimg, .color{
-    width: 50%
-  }
-
-
   .mission, .strengths{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
+    background-color: #Ffffc4;
   }
 
   .mision_items, .strengths_items{
@@ -110,7 +146,6 @@ body{
   }
 
   /*for rise up*/
-
   .rise_up ul{
     margin: 20px;
     padding: 20px;
@@ -118,6 +153,10 @@ body{
   .rise_up li{
     text-align: left;
     list-style: circle;
+  }
+
+  .rise_up li a{
+    text-decoration: underline;
   }
 
 
@@ -133,11 +172,37 @@ body{
     grid-row: 1 / span 1;
   }
 
+  .collageimg, .color{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    padding: 5px;
+  }
+
 /*for weather */
 .weather_sketch{
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: auto;
+}
+
+.weather_sketch1{
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.weather_sketch2{
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  
 }
 
 .weather_imgs_1, .weather_imgs_2{
@@ -147,73 +212,22 @@ body{
   justify-items: center;
 }
 
+/*for all next links in portfolio pages*/
 .next {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
   padding: 20px;
   text-align: center;
+  background-color: #Ffffc4;
 }
 .next a:hover {
   color: #800040;
+  text-decoration: underline;
 }
-
-  h1{
-    font-size: 2em;
-    text-align: center;
-    line-height: 2;
-    padding: 10px;
-  }
-  
-  h2{
-    font-size: 1.5em;
-    text-align: center;
-    padding: 20px 10px;
-  }
-  
-  p {
-    padding: 10px 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-
-  a.skip{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
-  
-  a.skip:focus{
-    top:20px;
-    color: black;
-    text-decoration-style: solid;
-  }
 
   .projects img:hover {
     box-shadow: 0 0 2px 1px black;
-  }
-
-  a, a:visited{
-    text-decoration: none;
-    color: black;
-  }
-  
-  *:focus{
-    border: 2px solid black;
-  }
-  
-  footer{
-    background-color: #696969;
-    color: white;
-    padding: 10px;
-    text-align: left;
   }
 
   .projects{
@@ -250,10 +264,12 @@ body{
       display: grid;
       grid-template-columns: auto auto auto;
       grid-template-rows: auto auto auto;
+      width: 100%;
     }
   
     .mision_items, .strengths_items{
       grid-column: 2 / span 1;
+      width: 100%;
     }
 
     p{
