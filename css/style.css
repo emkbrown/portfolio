@@ -12,7 +12,7 @@ body{
     border: #eeeeee;
     border-bottom: 6px solid #696969;
     animation-name: bordercolor;
-    animation-duration: 5s;
+    animation-duration: 10s;
     display: flex;
     align-items: center;
     justify-content: center;
