@@ -127,6 +127,9 @@ body{
   body.about li.about, body.portfolio li.portfolio {
     text-decoration: underline;
   }
+  #innernav{
+    text-decoration: underline;
+  }
   
   nav li a:hover {
     color: #800040;
