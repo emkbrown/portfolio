@@ -69,6 +69,15 @@ body{
     grid-row: 1;
   }
 
+  .parallax{
+    background-image: url("../img/myface.jpg");
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   h1{
     font-size: 2em;
     text-align: center;
@@ -342,9 +351,10 @@ body{
     transform-style: preserve-3d;
   }
 
-  .sketches:hover .flipcard_inner{
+  .sketches:hover .flipcard_inner, .sketches:focus .flipcard_inner{
     transform: rotateY(180deg);
   }
+
 
   .front, .back{
     position: absolute;
@@ -441,6 +451,7 @@ body{
       font-size: 1em;
     }
 
+ 
     .about a, .portfolio a, .resume a{
       padding: 10px;
     }
@@ -536,6 +547,10 @@ body{
     .facts img{
       grid-column: 1 / span 1;
       grid-row: 1;
+    }
+
+    .parallax{
+      background-image: url("../img/emparallax.jpg");
     }
 
     header{
