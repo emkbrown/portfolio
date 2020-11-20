@@ -69,14 +69,14 @@ body{
     grid-row: 1;
   }
 
-  .parallax{
+  /* .parallax{
     background-image: url("../img/myface.jpg");
     min-height: 900px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  } */
 
   h1{
     font-size: 2em;
@@ -450,7 +450,6 @@ body{
       flex-direction: row;
       font-size: 1em;
     }
-
  
     .about a, .portfolio a, .resume a{
       padding: 10px;
@@ -551,6 +550,15 @@ body{
 
     .parallax{
       background-image: url("../img/emparallax.jpg");
+      min-height: 900px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .mobileimg{
+      display: none;
     }
 
     header{
