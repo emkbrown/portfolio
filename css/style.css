@@ -588,8 +588,16 @@ body{
       padding-left: 0px;
     }
 
-    .weather_sketch1, .weather_sketch2{
-      width: 75%;
+   
+
+    .weather_sketch1{
+      grid-row: 2;
+      grid-column: 1 / span 1;
+    }
+
+    .weather_sketch2{
+      grid-row: 2;
+      grid-column: 2 / span 1;
     }
 
     .rise_up li{
