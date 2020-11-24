@@ -528,7 +528,7 @@ body{
       font-size: 1em;
     }
 
-    .facts{
+/*     .facts{
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: auto auto;
@@ -546,7 +546,7 @@ body{
     .facts img{
       grid-column: 1 / span 1;
       grid-row: 1;
-    }
+    } */
 
     .parallax{
       background-image: url("../img/emparallax.jpg");
@@ -555,6 +555,10 @@ body{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+
+    .info p{
+      width: 75%;
     }
 
     .mobileimg{
